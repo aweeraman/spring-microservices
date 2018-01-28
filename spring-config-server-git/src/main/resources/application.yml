@@ -13,5 +13,7 @@ spring:
         git:
           uri: https://github.com/aweeraman/spring-microservices
           search-paths: 'spring-config'
+          clone-on-start: true
+          default-label: master
 server:
   port: 8888
