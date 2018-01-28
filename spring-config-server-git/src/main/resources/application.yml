@@ -2,13 +2,16 @@
 management:
   security:
     enabled: false
+logging:
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'DEBUG'
 spring:
   cloud:
     config:
       server:
         git:
           uri: https://github.com/aweeraman/spring-microservices
-          search-paths:
-            - 'spring-config/*'
+          search-paths: 'spring-config'
 server:
   port: 8888
