@@ -1,0 +1,9 @@
+---
+management:
+  security:
+    enabled: false
+spring:
+  application:
+    name: hello1
+server:
+  port: 8080
